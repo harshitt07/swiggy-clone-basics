@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login/Signup</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Login</h1>
+  <div id="loginForm">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button type="submit" onclick = "login()">Login</button>
+    <button type="submit" onclick = "forgotPassword()">Change Password</button>
+  </div>
+
+  <!-- <h1>Signup</h1>
+  <div id="signupForm">
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="email" placeholder="Email Id"><br>
+    <input type="number" id="contact" placeholder="Contact Number">
+    <input type="password" id="signup_password" placeholder="Password">
+    <button type="submit" onclick="signup()">Signup</button>
+  </div> -->
+
+  <br/>
+
+  <div id="swiggy">
+
+    <label>Choose a Restaurant
+      <select id="serviceQuality">
+        <option disabled selected value="0">-- Choose a Restaurant --</option>
+      </select>
+    </label><br>
+
+    <button type="button" id="calculate" onclick="displayFood()">Display Food!</button>
+
+    <div id="food-list">
+    </div>
+
+    <h2>Cart</h2>
+    <div id="cartContainer"></div>
+
+
+    <h2>Order History</h2>
+    <div id="orderHistoryContainer"></div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
